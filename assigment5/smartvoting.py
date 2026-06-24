@@ -1,6 +1,6 @@
-a = int(input("enter your age : "))
+age = int(input("enter your age : "))
 b = input("Do Your have ID (yes/No): ").lower()
-if a>=18:
+if age>=18:
     if b=="yes":
         print("Your are eligible")
     else:

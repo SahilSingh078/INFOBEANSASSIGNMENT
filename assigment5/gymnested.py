@@ -1,5 +1,5 @@
-a = int(input("Enter your age "))
-b = float(input("enter your weight "))
+a = int(input("Enter your age: "))
+b = float(input("enter your weight: "))
 c = input("Enter Your goal (Weight loss/ muscle gain)").lower()
 if a >=18:
     if b >=80:
