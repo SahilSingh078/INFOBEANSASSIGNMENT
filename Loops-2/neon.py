@@ -27,7 +27,7 @@ for i in range(1,len+1):
 	b = square%10
 	sum = sum + b
 	square //= 10 
-	len+=1
+	
 print("sum: ", sum)
 if temp == sum:
 	print("its a neon number ")

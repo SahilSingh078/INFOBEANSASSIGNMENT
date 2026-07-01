@@ -1,5 +1,3 @@
-
-
 n = int(input("Enter a number: "))
 
 large = 0

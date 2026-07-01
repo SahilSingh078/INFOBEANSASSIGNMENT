@@ -13,7 +13,6 @@ while count>0:
 
 a = int(input("Enter Your Number: "))
 len = len(str(a))
-count = 1
 for i in range(1,len+1):
 	r =a %10
 	a = a//10

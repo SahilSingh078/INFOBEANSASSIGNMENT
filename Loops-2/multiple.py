@@ -15,5 +15,5 @@ count  = 0
 for i in range(a,b+1):
 	if a%5 ==0:
 		count+=1
-	a+=1
+	
 print("total count: ", count)
