@@ -1,5 +1,5 @@
 primt("Exercise1")
 print("Hello & Name Printer")
-name="Aryan"
+name="sahil"
 print(f"Hello \n{name}")
 print("================================")
