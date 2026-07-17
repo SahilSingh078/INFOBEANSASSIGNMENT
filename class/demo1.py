@@ -36,10 +36,20 @@ if len(s) == len(a):
 else:
     print("Not Anagrams")
 '''
-s = input("enter string 1: ")
+'''
+#COUNTING THE CHARACTERS
+s1 = input("enter string 1: ")
+s2 = input("enter string 2: ")
 ch  = input("Enter character: ")
 count  =0 
 for i in s:
 	if i == ch:
 		count+=1
 print("count: ",count)
+
+'''
+
+
+s1 = input("enter string 1: ")
+s2 = input("enter string 2: ")
+if len
