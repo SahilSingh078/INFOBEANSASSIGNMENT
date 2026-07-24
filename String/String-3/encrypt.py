@@ -10,8 +10,6 @@ Input: Enter message: java is powerful
 Output: Encrypted Message: avaj si lufrewop
 '''
 
-a =input("Enter Message: ").split()
+a = input("Enter Message: ").split()
 for i in range(len(a)):
-    ch =a[i]
-    b=ch[::-1]
-    print(b, end=" ")
+    print("ENCRYPTED MESSAGE ",a[i][::-1], end=" ")

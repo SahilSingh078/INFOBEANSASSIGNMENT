@@ -24,5 +24,5 @@ for i in range(len(a)):
         valid = False
         break
 
-if valid:
+if valid==True:
     print("Total digits:", count)

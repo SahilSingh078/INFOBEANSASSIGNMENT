@@ -13,15 +13,26 @@ Input: Enter account number: 123456789012
 
 Output: Masked Account: ********9012
 '''
-a = input("Enter Account Number(Without Space): ")
+# a = input("Enter Account Number(Without Space): ")
 
+# for i in range(len(a)):
+#     if ("a" <= a[i] <= "z") or ("A" <= a[i] <= "Z") or a[i]==" " or a[i]=="!@#$%^&*()_+/*-[]{ };"'' :
+#         print("Only Digits Allowed (No Space)")
+#         break
+# else:
+
+#     for i in range(len(a) - 4):
+#         print("*",end = "")
+#     for i in range(len(a) - 4, len(a)):
+#         print(a[i], end = "")
+
+a = input("Enter Account Number (Without Space): ")
 for i in range(len(a)):
-    if ("a" <= a[i] <= "z") or ("A" <= a[i] <= "Z") or a[i]==" " or a[i]=="!@#$%^&*()_+/*-[]{ };"'' :
+    if not a[i].isdigit():
         print("Only Digits Allowed (No Space)")
         break
 else:
-
-    for i in range(len(a) - 4):
-        print("*",end = "")
-    for i in range(len(a) - 4, len(a)):
-        print(a[i], end = "")
+    for i in range(len(a)-4):
+        print("*", end="")
+    for i in range(len(a)-4, len(a)):
+        print(a[i], end="")

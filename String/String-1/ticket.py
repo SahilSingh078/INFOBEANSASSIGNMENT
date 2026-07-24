@@ -15,24 +15,31 @@ Enter PNR: PNR123456789
 Output:
 Valid PNR Number
 '''
-ticket=input("Enter number = ").upper()
-count=0
-number=0
-count1=0
-if len(ticket)!=12:
-	print("Invalid PNR")
+# ticket=input("Enter number = ").upper()
+# count=0
+# number=0
+# count1=0
+# if len(ticket)!=12:
+# 	print("Invalid PNR")
+# else:
+# 	if ticket[0]=="P" and ticket[1]=="N" and ticket[2]=="R":
+# 		count=1
+# 	i=0
+# 	while i<len(ticket):
+# 		ch=ticket[i]
+# 		if ch>="0" and ch<="9":
+# 			number=number+1	
+# 		else:
+# 			count1=count1+1
+# 		i=i+1
+# 	if count==1 and number==9:
+# 		print("Valid PNR number")
+# 	else:	
+# 		print("Invalid PNR")
+
+
+ticket = input("Enter pnr: ").upper()
+if ticket.startswith("PNR") and len(ticket) == 12 and ticket[3:].isdigit():
+    print("Valid PNR Number")
 else:
-	if ticket[0]=="P" and ticket[1]=="N" and ticket[2]=="R":
-		count=1
-	i=0
-	while i<len(ticket):
-		ch=ticket[i]
-		if ch>="0" and ch<="9":
-			number=number+1	
-		else:
-			count1=count1+1
-		i=i+1
-	if count==1 and number==9:
-		print("Valid PNR number")
-	else:	
-		print("Invalid PNR")
+    print("Invalid PNR Number")

@@ -14,3 +14,18 @@ Output:
 is
 ```
 '''
+a = input("Enter the string: ")
+word = " "
+short = " "
+
+for i in range(len(a)):
+    ch =a[i]
+    if ch !=" ":
+        word = word + ch
+    else :
+        if short == " ": 
+            short = word
+        elif len(word) < len(short):
+            short = word
+        word = ""
+print("shortest word is : ", short)
