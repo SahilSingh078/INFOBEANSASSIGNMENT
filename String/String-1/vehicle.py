@@ -15,34 +15,32 @@ Enter vehicle number: MP04AB1234
 Output:
 Valid Vehicle Number
 '''
-n=input("enter =")
-a=n[:2]
-b=n[2:4]
-count=0
-space=0
-
-if n[4]==" ":
-
-    space+=1
-
-
-    for i in n:
-        if "A" <= a <= "Z" or  "a" <= a <= "z":
-            count=0
-            if "0" <= b <= "9":
-                count=0
-            else:
-                count =1
-
-
-        else:
-            count=1
-    if (len(n)-space)==10 or count==0:
-        print("Valid Vehicle Number")
-    else:
-        print("not Valid Vehicle Number")
+a=input("enter =")
+# a=n[:2]
+# b=n[2:4]
+# count=0
+# space=0
+# if n[4]==" ":
+#     space+=1
+#     for i in n:
+#         if "A" <= a <= "Z" or  "a" <= a <= "z":
+#             count=0
+#             if "0" <= b <= "9":
+#                 count=0
+#             else:
+#                 count =1
+#         else:
+#             count=1
+#     if (len(n)-space)==10 or count==0:
+#         print("Valid Vehicle Number")
+#     else:
+#         print("not Valid Vehicle Number")
+# else:
+#     if n[i]>4==" ":
+#         print("Invalid Number")
+#     else:
+#         print("invalid number")
+if len(a)==10 and a[:2].isalpha() and a[2:4].isdigit() and a[4:6].isalpha() and a[6:].isdigit():
+    print("Valid number")
 else:
-    if n[i]>4==" ":
-        print("Invalid Number")
-    else:
-        print("invalid number")
+    print("Not valid")

@@ -1,7 +1,4 @@
 
-Lift Mode Operation – Advanced Smart Elevator System
-
-
 '''
 A smart building elevator works in multiple intelligent modes based on the mode number entered by the control panel.  
 The system must automatically execute floor movement instructions using loops.

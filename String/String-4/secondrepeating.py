@@ -18,26 +18,28 @@ Spaces should be ignored.
 If no second highest frequency exists, print:
 Second highest repeating character not found
 '''
+
 a = input("Enter the string: ")
 highest = 0
 second = 0
 highest_char = ""
 second_char = ""
-for i in range(len(a)):
-    if a[i] == " ":
+checked = ""
+for ch in a:
+    if ch == " ":
         continue
-    count = 0
-    for j in range(len(a)):
-        if a[i] == a[j]:
-            count = count + 1
+    if ch in checked:
+        continue
+    checked += ch
+    count = a.count(ch)
     if count > highest:
         second = highest
         second_char = highest_char
         highest = count
-        highest_char = a[i]
-    if count < highest and count > second:
+        highest_char = ch
+    elif count > second and count < highest:
         second = count
-        second_char = a[i]
+        second_char = ch
 if second == 0:
     print("Second highest repeating character not found")
 else:

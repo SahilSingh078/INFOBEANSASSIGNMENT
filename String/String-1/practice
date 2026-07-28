@@ -1,0 +1,52 @@
+'''
+1. Adjacent Digit Difference Analyzer
+A system analyzes differences between consecutive digits in a number.
+Write a program to:
+Find the difference between every pair of adjacent digits
+Display all differences
+Count how many differences are even
+Find the largest difference
+If all differences are same → print Uniform Difference
+Else → print Non-Uniform Pattern
+Input:
+84261
+Output:
+Differences: 4 2 4 5
+Even Differences Count = 3
+Max Difference = 5
+Non-Uniform Pattern
+'''
+a = input("Enter the number: ")
+
+if a.isdigit():
+    even=0
+    max = 0
+    flag = True
+    curr = True
+    prev = 0
+    print("Diffeece:")
+    for i in range(len(a)-1):
+        ch=a[i]
+        ch1=a[i+1]
+        diff = abs(int(ch)-int(ch1))
+
+        print(diff, end=" ")
+
+        
+        if diff % 2==0:
+            even+=1
+        if diff>max:
+            max=diff
+        if flag:
+            prev = diff
+            flag = False
+        else:
+            if  prev != diff:
+                curr = False
+
+    print("count: ",even, end=" ")
+    print("max ",max, end=" ")
+    if curr == False:
+        print("not")
+    else:
+        print("uniform")

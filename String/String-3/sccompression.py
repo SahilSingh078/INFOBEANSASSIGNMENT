@@ -26,17 +26,17 @@ Output: Expanded Message: rrrssttttt
 Total Characters: 10
 '''
 
-a = input("Enter the string: ").lower()
-expand = ""
-for i in range(len((a))):
-    ch  = a[i]
-    if "a"<= a[i] <= "z" :
-        if i+1 <len(a):
-            if "0"<=a[i+1]<="9":
-                expand += ch * int(a[i+1])
+# a = input("Enter the string: ").lower()
+# expand = ""
+# for i in range(len((a))):
+#     ch  = a[i]
+#     if "a"<= a[i] <= "z" :
+#         if i+1 <len(a):
+#             if "0"<=a[i+1]<="9":
+#                 expand += ch * int(a[i+1])
 
-print("Expanded Message:", expand)
-print("Total Characters:", len(expand))
+# print("Expanded Message:", expand)
+# print("Total Characters:", len(expand))
 
 # message=input("Enter Compressed message :").lower()
 # i=0
@@ -52,3 +52,15 @@ print("Total Characters:", len(expand))
 # 	i=i+1
 # print(f"Expanded Message :{a}")
 # print("Total Characters: ",sum)
+a = input("Enter Compressed Message: ").lower()
+
+expand = ""
+
+for i in range(len(a)):
+    if a[i].isalpha():
+        if i + 1 < len(a) and a[i + 1].isdigit():
+            expand += a[i] * int(a[i + 1])
+        else:
+            expand+=a[i]
+print("Expanded Message:", expand)
+print("Total Characters:", len(expand))

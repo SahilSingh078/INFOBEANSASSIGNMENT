@@ -30,8 +30,5 @@ for i in range (a,b+1):
 			print(i, "-> No event")
 print("total leap year :", count)
 print("Total Events scheduled", count)
-	'''
-	galat h
-'''
-
+	
 		

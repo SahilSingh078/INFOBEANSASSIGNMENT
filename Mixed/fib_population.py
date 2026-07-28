@@ -7,7 +7,7 @@ print("Population Growth ")
 for i in range(n):
 	print( a, end =" ")
 	total = total + a
-	if a>5:
+	if a>n:
 		count += 1
 	c = a+b
 	a =b

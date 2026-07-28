@@ -8,7 +8,6 @@ while n> 0:
     if d < small:
         small = d
     n = n // 10
-
 print("Smallest Digit =", small)
 
 #for loops

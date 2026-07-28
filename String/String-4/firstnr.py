@@ -13,16 +13,25 @@ e
 ```
 '''
 
+# a = input("Enter the string: ")
+
+# for i in range(len(a)):
+#     ch=a[i]
+#     count=0
+#     for j in range(len(a)):
+#           if ch==a[j]:
+#                 count=count+1     
+#     if count ==1:
+#         print("First non repeated character :", a[i])
+#         break
+# else: 
+#     print("No Unique character found")
+
 a = input("Enter the string: ")
 
-for i in range(len(a)):
-    ch=a[i]
-    count=0
-    for j in range(len(a)):
-          if ch==a[j]:
-                count=count+1     
-    if count ==1:
-        print("First non repeated character :", a[i])
+for ch in a:
+    if a.count(ch) == 1:
+        print("First non repeated character:", ch)
         break
-else: 
-    print("No Unique character found")
+else:
+    print("No Unique Character Found")

@@ -14,10 +14,8 @@ hello how are you
 '''
 
 s = input("Enter a sentence: ")
-
 word = s.split()
 printed = ""
-
 for ch in word:
     if ch not in printed:
          printed = printed + ch+ " "

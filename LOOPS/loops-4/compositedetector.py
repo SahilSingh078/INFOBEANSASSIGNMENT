@@ -3,7 +3,6 @@ x= 0
 for i in range(1,a+1):
 	if a%i==0:
 		x= x+1
-		
 else:
 	if x !=2:
 		print("Composite Number")

@@ -136,14 +136,11 @@ while True:
                print("Output:", end=" ")
 
                for word in msg:
-               
                    digit = False
-
                    for ch in word:
                        if ch.isdigit():
                            digit = True
-                           break
-                      
+                           break                      
                    if digit:
                        print(word, end=" ")
                    else:
@@ -151,62 +148,69 @@ while True:
                        rev = rev[0].upper() + rev[1:]
                        print(rev, end=" ")               
           case 3:
-               msg = input("Input : ")
-               result = ""
-               fs = ""
+               # msg = input("Input : ")
+               # result = ""
+               # fs = ""
 
-               i = 0
-               while i<len(msg):
-                    word = ""
-                    while i<len(msg) and msg[i] == " ":
-                         i+=1
+               # i = 0
+               # while i<len(msg):
+               #      word = ""
+               #      while i<len(msg) and msg[i] == " ":
+               #           i+=1
 
-                    while i<len(msg) and msg[i] != " ":
-                         word+= msg[i]
-                         i+=1
+               #      while i<len(msg) and msg[i] != " ":
+               #           word+= msg[i]
+               #           i+=1
                     
-                    if word != "":
-                         f1 = " "+word.lower()+" "
-                         f2 = " "+fs.lower()+" "
+               #      if word != "":
+               #           f1 = " "+word.lower()+" "
+               #           f2 = " "+fs.lower()+" "
 
-                         if f1 not in f2:
-                              if fs == "":
-                                   fs = word
-                              else:
-                                   fs+=" "+word
+               #           if f1 not in f2:
+               #                if fs == "":
+               #                     fs = word
+               #                else:
+               #                     fs+=" "+word
                          
-               result = ""
+               # result = ""
 
-               i = len(fs) - 1
+               # i = len(fs) - 1
 
-               while i >= 0:
-                    temp = ""
+               # while i >= 0:
+               #      temp = ""
           
-                    while i >= 0 and fs[i] == " ":
-                         i -= 1
+               #      while i >= 0 and fs[i] == " ":
+               #           i -= 1
           
-                    while i >= 0 and fs[i] != " ":
-                         temp = fs[i] + temp
-                         i -= 1
+               #      while i >= 0 and fs[i] != " ":
+               #           temp = fs[i] + temp
+               #           i -= 1
           
-                    if temp != "":
-                         new = ""
-                         j = 0
-                         while j < len(temp):
-                              if j == 0:
-                                   new += temp[j].upper()
-                              else:
-                                   new += temp[j]
-                              j += 1
+               #      if temp != "":
+               #           new = ""
+               #           j = 0
+               #           while j < len(temp):
+               #                if j == 0:
+               #                     new += temp[j].upper()
+               #                else:
+               #                     new += temp[j]
+               #                j += 1
                     
-                         temp = new
+               #           temp = new
                
-                    if result == "":
-                         result = temp
-                    else:
-                         result += " " + temp
+               #      if result == "":
+               #           result = temp
+               #      else:
+               #           result += " " + temp
                
-               print("Output:", result)
+               # print("Output:", result)
+               a = input("Enter the String: ").split()
+               compare=[]
+               for i in a:
+                    if i not in compare:
+                         compare.append(i)
+               rev = compare[::-1]
+               print(" ".join(rev))
 
           case 4:
                print("Program Closed Successfully")

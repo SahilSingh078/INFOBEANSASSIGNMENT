@@ -13,9 +13,16 @@ Output:
 abcda
 '''
 
-a = input("Enter the String: ")
-result = " "
-for i in a:
-    if result==" " or i != result[-1]:
-        result+=i
-print(result) 
+# a = input("Enter the String: ")
+# result = " "
+# for i in a:
+#     if result==" " or i != result[-1]:
+#         result+=i
+# print(result) 
+
+a= input("Enter the string: ")
+word = ""
+for i in range(len(a)):
+    if i ==0 or a[i] !=a[i-1]:
+        word+=a[i]
+print(word)

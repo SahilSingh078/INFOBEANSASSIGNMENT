@@ -5,6 +5,5 @@ for i in range(x):
     b = n%10
     prod = b *prod
     n//=10
-
 print(prod)
     

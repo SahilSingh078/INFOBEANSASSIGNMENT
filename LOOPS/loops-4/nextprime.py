@@ -17,15 +17,12 @@ Next Prime = 17
 '''
 
 a = int(input("Enter Your Number: "))
-
 while True:
     a += 1
     x = 0
-
     for i in range(1, a + 1):
         if a % i == 0:
             x += 1
-
     if x == 2:
         print("Next Prime Number =", a)
         break

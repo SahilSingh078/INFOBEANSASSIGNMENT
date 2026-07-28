@@ -17,17 +17,22 @@ Output:
 ```
 ---
 '''
+# a = input("Enter the sentence: ")
+# word = input("Enter the word: ")
+# temp = ""
+# count = 0
+# for i in range(len(a)):
+#     if a[i] != " ":
+#         temp += a[i]
+#     else:
+#         if temp == word:
+#             count += 1
+#         temp = ""
+# if temp == word:
+#     count += 1
+# print(count)
+
 a = input("Enter the sentence: ")
 word = input("Enter the word: ")
-temp = ""
-count = 0
-for i in range(len(a)):
-    if a[i] != " ":
-        temp += a[i]
-    else:
-        if temp == word:
-            count += 1
-        temp = ""
-if temp == word:
-    count += 1
-print(count)
+a=a.split()
+print(a.count(word))

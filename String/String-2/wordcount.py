@@ -9,12 +9,14 @@ Total words: 5
 '''
 
 
-a = input("Enter complaint: ")
+a = input("Enter complaint: ").split()
+b =len(a)
+print(b)
 
-count = 0
+# count = 0
 
-for i in range(len(a)):
-    if a[i] != " " and (i == 0 or a[i-1] == " "):
-        count += 1
+# for i in range(len(a)):
+#     if a[i] != " " and (i == 0 or a[i-1] == " "):
+#         count += 1
 
-print("Total words:", count)
+# print("Total words:", count)
