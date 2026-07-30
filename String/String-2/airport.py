@@ -55,12 +55,9 @@ Formatted Details:
 Business Class Passenger Seat B12
 '''
 s = input("Enter Passenger Details: ")
-
 result = ""
-
 for i in range(len(s)):
     ch = s[i]
-
     if (i == 0 or s[i-1] == " ") and ch >= 'a' and ch <= 'z':
         result = result + chr(ord(ch) - 32)
     else:

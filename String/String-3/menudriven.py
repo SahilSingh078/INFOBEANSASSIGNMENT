@@ -132,16 +132,14 @@ while True:
 
           case 2:
                msg = input("Input: ").split()
-
                print("Output:", end=" ")
-
                for word in msg:
                    digit = False
                    for ch in word:
                        if ch.isdigit():
                            digit = True
                            break                      
-                   if digit:
+                   if digit==True:
                        print(word, end=" ")
                    else:
                        rev = word[::-1]
