@@ -9,17 +9,17 @@ print("3. All occurrences")
 choice = int(input("Enter your choice (1, 2, or 3): "))
 match choice:
     case 1:
-        index = a.find(b)
-        if index != -1:
-            a = a[:index] + a[index+1:]
-        print("Result:", a)
+        ind = a.find(b)
+        if ind != -1:
+            a = a[:ind] + a[ind+1:]
+        print("result:", a)
     case 2:
-        index = a.rfind(b)
-        if index != -1:
-            a = a[:index] + a[index+1:]
-        print("Result:", a)
+        ind = a.rfind(b)
+        if ind != -1:
+            a = a[:ind] + a[ind+1:]
+        print("result:", a)
     case 3:
         a = a.replace(b, "")
-        print("Result:", a)
+        print("result:", a)
     case _:
         print("Invalid choice")

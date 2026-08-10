@@ -11,8 +11,8 @@ for ch in a:
     if count < lowest:
         lowest = count
 print("lowest characters are: ", end="")
-printed = ""
+result = ""
 for ch in a:
-    if a.count(ch) == lowest and ch not in printed:
+    if a.count(ch) == lowest and ch not in result:
         print(ch, end=" ")
-        printed = printed + ch
+        result+=ch
