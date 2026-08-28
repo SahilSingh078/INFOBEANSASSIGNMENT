@@ -28,3 +28,13 @@ d={}
 for x in a:
     d[x]=d.get(x,0)+1
 print(d)
+
+
+# def add(a,b):
+#     c = a+b
+#     def mult(a,b):
+#         return (a*b)
+#     x = mult(10,20)
+#     print(x)
+#     print(c)
+# add(10,25)
