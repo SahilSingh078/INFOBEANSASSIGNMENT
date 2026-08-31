@@ -5,6 +5,7 @@ QUESTION 1: EMPLOYEE SALARY ANALYSIS
 A company wants to store employee details and generate salary reports using NamedTuple.
 Fields:
 emp_id, emp_name, department, salary
+
 Requirements:
 1. Read N employee details from the user and store them in a list of NamedTuples.
 ---

@@ -14,7 +14,7 @@ Example:
 Input
 
 N = 4
-passwords[] = {"a, "fg", "adbc", "de""}
+passwords[] = {"a, "fg", "abc", "de""}
 
 Output
 

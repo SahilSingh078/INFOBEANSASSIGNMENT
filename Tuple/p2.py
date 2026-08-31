@@ -44,56 +44,46 @@ Students in Python Course:
 1 Ravi Python 85
 3 Karan Python 92
 '''
-
 from collections import namedtuple
-Student = namedtuple("employee",["roll_no", "name", "course", "marks"])
-n = int(input("Enter number of students:"))
+Student = namedtuple("Student", ["roll_no", "name", "course", "marks"])
 students = []
+n = int(input("Enter number of students: "))
 for i in range(n):
-    print("Enter Details:")
-    rollno = int(input("Enter rollno:"))
-    name = input("Enter Student Name:")
-    course = input("Enter Course Name:")
-    marks = int(input("Enter Student Makrs:"))
-    stud = Student(rollno,name,course,marks)
-    students.append(stud)
+    roll_no = int(input("Enter Roll No: "))
+    name = input("Enter Student Name: ")
+    course = input("Enter Course: ")
+    marks = int(input("Enter Marks: "))
+    student = Student(roll_no, name, course, marks)
+    students.append(student)
 
-crse = input("Enter course:")
+print("\nAll Student Details:")
+for s in students:
+    print(s.roll_no, s.name, s.course, s.marks)
 
-print(students)
-print("details:")
-for x in students:
-    print(x.roll_no,x.name,x.course,x.marks)
+topper = students[0]
+for s in students:
+    if s.marks > topper.marks:
+        topper = s
 
+print("\nTopper:")
+print(topper.roll_no, topper.name, topper.course, topper.marks)
 
-print("Topper:")
-max = 0
-ans = []
-for x in students:
-    if x.marks > max:
-        max = x.marks
-        ans.append(x)
-print(ans[-1].roll_no,ans[-1].name,ans[-1].course,ans[-1].marks)
-
-ans.clear()
 count = 0
-print("Students Above 80:")
-
-for x in students:
-    if x.marks > 80:
-        count+=1
+for s in students:
+    if s.marks > 80:
+        count = count + 1
+print("\nStudents Above 80:")
 print(count)
 
-print("Average Marks:")
-avg = 0
-for x in students:
-    avg += x.marks
-      
-print(avg/len(students))
+total = 0
+for s in students:
+    total = total + s.marks
+average = total / n
+print("\nAverage Marks:")
+print(average)
 
-
-
-print("Students in",crse,"Course:")
-for x in students:
-    if x.course == crse:
-        print(x.roll_no,x.name,x.course,x.marks)
+course_name = input("\nEnter course: ")
+print("\nStudents in", course_name, "Course:")
+for s in students:
+    if s.course == course_name:
+        print(s.roll_no, s.name, s.course, s.marks)

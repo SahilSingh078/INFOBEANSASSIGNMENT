@@ -1,5 +1,6 @@
 '''
-74Find the longest substring without repeating characters. S = "abcabcbb" "abc
+74
+Find the longest substring without repeating characters. S = "abcabcbb" "abc
 '''
 a = input("Enter the string: ")
 lar = 0
@@ -17,3 +18,14 @@ for i in range(len(a)):
                 lar=len(b)
                 result= b
 print(result)
+
+# s = input("Enter a string: ")
+# longest = ""
+# current = ""
+# for ch in s:
+#     if ch in current:
+#         current = current[current.index(ch) + 1:]
+#     current += ch
+#     if len(current) > len(longest):
+#         longest = current
+# print("Longest substring without repeating characters:", longest)

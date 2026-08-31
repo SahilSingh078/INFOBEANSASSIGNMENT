@@ -63,7 +63,6 @@ print("details:")
 for x in patient:
     print(x.patient_id,x.name,x.age,x.disease)
 
-
 print("Patient Found:")
 
 for x in patient:
@@ -73,12 +72,9 @@ for x in patient:
 
 
 print("Patients Above 60:")
-
 for x in patient:
     if x.age > 60:
         print(x.patient_id,x.name,x.age,x.disease)
-
-
 
 count = 0
 print("Patients with",findDis,":")

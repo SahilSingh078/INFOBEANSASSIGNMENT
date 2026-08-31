@@ -36,52 +36,35 @@ Total Sales:
 Orders Above ₹10,000:
 3
 '''
-
 from collections import namedtuple
-Order = namedtuple("patient",["order_id", "name", "product_name", "amount"])
-n = int(input("Enter number of orders:"))
+Order = namedtuple("Order", ["order_id", "customer_name", "product_name", "amount"])
+n = int(input("Enter number of orders: "))
 orders = []
 for i in range(n):
     print("Enter Details:")
-    id = input("Enter Patient ID:")
-    name = input("Enter patient Name:")
-    product = input("Enter product Name:")
-    amount = int(input("Enter amount:"))
-    p = Order(id,name,product,amount)
-    orders.append(p)
-
-
-
-print(orders)
-print("details:")
+    order_id = input("Enter Order ID: ")
+    customer_name = input("Enter Customer Name: ")
+    product_name = input("Enter Product Name: ")
+    amount = int(input("Enter Amount: "))
+    order = Order(order_id, customer_name, product_name, amount)
+    orders.append(order)
+print("\nAll Order Details:")
 for x in orders:
-    print(x.order_id,x.name,x.product_name,x.amount)
-
-
-print("Highest Value Order:")
-
-max = 0
-ans = []
+    print(x.order_id, x.customer_name, x.product_name, x.amount)
+highest = orders[0]
 for x in orders:
-    if x.amount > max:
-        max = x.amount
-        ans.append(x)
-print(ans[-1].order_id,ans[-1].name,ans[-1].product_name,ans[-1].amount)
-
-
-
-print("Total Sales:")
-sum = 0
+    if x.amount > highest.amount:
+        highest = x
+print("\nHighest Value Order:")
+print(highest.order_id, highest.customer_name, highest.product_name, highest.amount)
+total = 0
 for x in orders:
-    sum += x.amount
-print(sum)
-
-
-
+    total += x.amount
+print("\nTotal Sales:")
+print(total)
 count = 0
-print("Orders Above ₹10,000:")
 for x in orders:
     if x.amount > 10000:
-        count+=1
-
+        count += 1
+print("\nOrders Above ₹10,000:")
 print(count)

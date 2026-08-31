@@ -53,7 +53,6 @@ Products Above ₹50,000:
 
 n = int(input("Enter number of Products:"))
 products = []
-
 for i in range(n):
     print("Enter Details:")
     id = input("Enter Book ID:")
@@ -66,7 +65,6 @@ for i in products:
     print(i)
 
 print("Costliest Product:")
-
 max = 0
 min = products[0][2]
 maxarr = []
@@ -95,3 +93,56 @@ print("Products Above ₹50,000:")
 for x in products:
     if x[2] > 50000:
         print(x)
+
+
+'''
+products = []
+
+n = int(input("Enter number of products: "))
+
+for i in range(n):
+    product_id = input("Enter product ID: ")
+    product_name = input("Enter product name: ")
+    price = int(input("Enter price: "))
+
+    product = (product_id, product_name, price)
+    products.append(product)
+
+print("\nAll Products:")
+
+for product in products:
+    print(product)
+
+costliest = products[0]
+
+for product in products:
+    if product[2] > costliest[2]:
+        costliest = product
+
+print("\nCostliest Product:")
+print(costliest)
+
+cheapest = products[0]
+
+for product in products:
+    if product[2] < cheapest[2]:
+        cheapest = product
+
+print("\nCheapest Product:")
+print(cheapest)
+
+total = 0
+
+for product in products:
+    total = total + product[2]
+
+average = total / n
+
+print("\nAverage Price:")
+print(average)
+
+print("\nProducts Above ₹50,000:")
+
+for product in products:
+    if product[2] > 50000:
+        print(product)'''

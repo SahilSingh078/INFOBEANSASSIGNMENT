@@ -2,7 +2,8 @@
 1.
 Mountain Hiking Elevation Analysis
 Problem Statement
-A trekking company records the elevation (in meters) reached by a hiker at different checkpoints during a mountain climb.
+A trekking company records the elevation (in meters) reached by a hiker at different checkpoints during a 
+mountain climb.
 A checkpoint is considered a peak checkpoint if its elevation is not smaller than its adjacent checkpoints.
 Given an array elevation[] of size N, find the index of any one peak checkpoint.
 Test Case 1

@@ -29,5 +29,5 @@ for i in nums:
 	if i>average:
 		print("Salary greater than average: ", i)
 	if i>=15000:
-		new.append(i)
+		rem.append(i)
 print("Remaining List: ",rem)	
