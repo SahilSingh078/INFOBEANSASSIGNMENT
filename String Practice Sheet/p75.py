@@ -11,11 +11,17 @@ for i in range(n):
     string.append(x)
 print(string)
 prefix = string[0]
-for i in range(1, len(string)):
-    for j in range(len(prefix), -1, -1):
-       if string[i].find(prefix)!= 0:
-        prefix = prefix[:-1]
+# for i in range(1, len(string)):
+#     for j in range(len(prefix), -1, -1):
+#        if string[i].find(prefix)!= 0: 
+#         prefix = prefix[:-1]
+# print(prefix)
+
+for i in range(1,len(string)):
+   while string[i].startswith(prefix)!= True:
+      prefix = prefix[:-1]
 print(prefix)
+
                    
 '''
 str = input("Enter the string:").split()

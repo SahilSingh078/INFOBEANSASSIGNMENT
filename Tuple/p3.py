@@ -41,7 +41,6 @@ Patients with Diabetes:
 2
 '''
 
-
 from collections import namedtuple
 Patient = namedtuple("patient",["patient_id", "name", "age", "disease"])
 n = int(input("Enter number of Patients:"))
@@ -68,8 +67,6 @@ print("Patient Found:")
 for x in patient:
     if x.patient_id == findID:
         print(x.patient_id,x.name,x.age,x.disease)
-
-
 
 print("Patients Above 60:")
 for x in patient:
