@@ -19,13 +19,3 @@ for i in range(len(a)):
                 result= b
 print(result)
 
-# s = input("Enter a string: ")
-# longest = ""
-# current = ""
-# for ch in s:
-#     if ch in current:
-#         current = current[current.index(ch) + 1:]
-#     current += ch
-#     if len(current) > len(longest):
-#         longest = current
-# print("Longest substring without repeating characters:", longest)
