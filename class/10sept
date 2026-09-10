@@ -1,0 +1,4 @@
+from datetime import datetime
+today = datetime.now()
+d= today.day + 7
+print(d)
